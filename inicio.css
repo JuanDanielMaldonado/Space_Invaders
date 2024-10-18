@@ -1,7 +1,7 @@
 body {
     margin: 0;
     height: 100vh; /* Altura de la ventana */
-    background-image: url('Imagenes/espacio.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-image: url('espacio.jpg'); /* Reemplaza con la ruta de tu imagen */
     background-size: cover; /* Cubrir toda la pantalla */
     background-position: center; /* Centrar la imagen */
     background-repeat: no-repeat; /* No repetir la imagen */
