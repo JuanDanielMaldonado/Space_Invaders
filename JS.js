@@ -18,7 +18,7 @@ const player = {
 };
 
 // Establece la ruta de la imagen del personaje
-player.image.src = 'Imagenes/jugador.png'; // Asegúrate que la ruta sea correcta
+player.image.src = 'jugador.png'; // Asegúrate que la ruta sea correcta
 
 // Dibujar al jugador con su imagen una vez que se carga
 player.image.onload = function () {
@@ -155,10 +155,10 @@ function drawBullets() {
 // *****************************************************************ENEMIGOS***************************************************************//
 // Conjunto de imagenes para los enemigos
 const enemyImages = [
-    'Imagenes/Allien1.png',
-    'Imagenes/Allien2.png',
-    'Imagenes/Allien3.png',
-    "Imagenes/AllienBoss.png"
+    'Allien1.png',
+    'Allien2.png',
+    "Allien3.png',
+    "AllienBoss.png"
 ]
 
 contador = 0;
