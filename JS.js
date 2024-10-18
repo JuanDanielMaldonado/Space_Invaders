@@ -46,6 +46,24 @@ function updatePlayerPosition() {
     if (keyState['ArrowRight'] || keyState['d']) {
         player.x += player.speed;
     }
+    // Verifica si el jugador sale del lado izquierdo
+    if (player.x + player.width < 0) {
+        player.x = canvas.width; // Reaparece en el lado derecho
+    }
+    
+    // Verifica si el jugador sale del lado derecho
+    if (player.x > canvas.width) {
+        player.x = -player.width; // Reaparece en el lado izquierdo
+    }
+
+    // Puedes hacer lo mismo para la parte superior e inferior del canvas si es necesario
+    if (player.y + player.height < 0) {
+        player.y = canvas.height; // Reaparece en la parte inferior
+    }
+    
+    if (player.y > canvas.height) {
+        player.y = -player.height; // Reaparece en la parte superior
+    }
 }
 
 // Dibujar al jugador con su imagen
@@ -187,10 +205,6 @@ class Enemy {
     // Método para dibujar el enemigo
     draw() {
         ctx.drawImage(this.image, this.x, this.y, this.width, this.height); // Dibuja la imagen del enemigo
-        // Mostrar las vidas restantes sobre el enemigo
-        ctx.font = '20px Arial';
-        ctx.fillStyle = 'white';
-        ctx.fillText(this.lives, this.x + this.width / 2 - 5, this.y - 10);
         
     }
 }
@@ -265,6 +279,8 @@ function gameLoop() {
     drawEnemies(); // Dibuja los enemigos
     requestAnimationFrame(gameLoop); // Llama de nuevo a gameLoop
     drawTextInTopRight("Puntuación: " + puntos);
+     updatePlayerPosition();
+     requestAnimationFrame(gameLoop);
 }
        
 // Iniciar el juego
