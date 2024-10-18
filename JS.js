@@ -55,15 +55,6 @@ function updatePlayerPosition() {
     if (player.x > canvas.width) {
         player.x = -player.width; // Reaparece en el lado izquierdo
     }
-
-    // Puedes hacer lo mismo para la parte superior e inferior del canvas si es necesario
-    if (player.y + player.height < 0) {
-        player.y = canvas.height; // Reaparece en la parte inferior
-    }
-    
-    if (player.y > canvas.height) {
-        player.y = -player.height; // Reaparece en la parte superior
-    }
 }
 
 // Dibujar al jugador con su imagen
