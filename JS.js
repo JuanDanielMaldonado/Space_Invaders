@@ -46,15 +46,7 @@ function updatePlayerPosition() {
     if (keyState['ArrowRight'] || keyState['d']) {
         player.x += player.speed;
     }
-    // Verifica si el jugador sale del lado izquierdo
-    if (player.x + player.width < 0) {
-        player.x = canvas.width; // Reaparece en el lado derecho
-    }
     
-    // Verifica si el jugador sale del lado derecho
-    if (player.x > canvas.width) {
-        player.x = -player.width; // Reaparece en el lado izquierdo
-    }
 }
 
 // Dibujar al jugador con su imagen
@@ -185,7 +177,7 @@ class Enemy {
         this.image.src = enemyImages[randomIndex]; // Asigna la imagen aleatoria
 
         // Asignar vidas según el enemigo seleccionado
-        this.lives = randomIndex + 1; // Alien 1: 1 vida, Alien 2: 2 vidas, Alien 3: 3 vidas
+        this.lives = randomIndex + Math.random(1, 5); // Alien 1: 1 vida, Alien 2: 2 vidas, Alien 3: 3 vidas
     }
 
     // Método para actualizar la posición del enemigo
