@@ -157,7 +157,7 @@ function drawBullets() {
 const enemyImages = [
     'Allien1.png',
     'Allien2.png',
-    "Allien3.png',
+    'Allien3.png',
     "AllienBoss.png"
 ]
 
