@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    height: 100vh; /* Altura de la ventana */
+    background-image: url('espacio.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Cubrir toda la pantalla */
+    background-position: center; /* Centrar la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    overflow: hidden;
+}
+.boton_inicio {
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-family: fantasy;
+    box-shadow: 0 8px 10px rgb(0, 0, 0)
+}
+.a_button {
+    text-decoration: none;
+}
+
+.boton_inicio:hover {
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    box-shadow: 0px 8px 30px rgb(255, 255, 255)
+
+}
+
+.título_instrucciones {
+    color: white;
+}
+.instrucciones {
+    color: white;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;    
+    margin-top: 20px;
+    font-size: 20px;
+}
+.título {
+    width: 1200px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+.titulo_instrucciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 70px;
+
+}
+
+.niveles{
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 50px
+}
+.nivel {
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    font-family: fantasy;
+    box-shadow: 0 8px 10px rgb(0, 0, 0)
+}
+.a_nivel {
+    text-decoration: none;
+}
+
+.nivel:hover {
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    box-shadow: 0px 8px 30px rgb(255, 255, 255)
+
+}
